@@ -13,13 +13,11 @@ public class ModuleSetExtractor implements ResultSetExtractor<Module> {
     @Override
     public Module extractData(ResultSet rs) throws SQLException, DataAccessException {
         return Module.builder()
-                .id(rs.getLong("id"))
                 .uuid(rs.getObject("uuid", UUID.class))
                 .name(rs.getString("name"))
                 .description(rs.getString("description"))
                 .version(rs.getString("version"))
                 .url(rs.getString("url"))
-                .dependencies(rs.getObject("dependencies", List.class))
                 .build();
     }
 }

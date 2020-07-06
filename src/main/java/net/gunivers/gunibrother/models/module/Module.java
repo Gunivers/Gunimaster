@@ -13,7 +13,6 @@ import java.util.UUID;
 @Getter
 @Setter
 public class Module {
-    private Long id;
     private UUID uuid;
     private String name;
     private String description;

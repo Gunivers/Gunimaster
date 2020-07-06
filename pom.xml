@@ -64,6 +64,12 @@
             <artifactId>spring-websocket</artifactId>
             <version>5.2.4.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
